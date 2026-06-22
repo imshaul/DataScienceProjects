@@ -1,0 +1,8 @@
+Netflix Data Analysis - Key Findings
+
+1. Netflix contains significantly more Movies than TV Shows. The Movies category has nearly 4,000 titles, while TV Shows account for around 1,900 titles.
+2. The United States contributes the largest amount of content on Netflix. Other major contributors include India, the United Kingdom, Japan, and several other countries.
+3. International Movies are the most common genre on Netflix, indicating strong demand for content from different regions of the world.
+4. Drama is the second most common genre, followed by Comedies and other categories.
+5. Content production and availability on Netflix increased dramatically after 2000. The growth accelerated further between 2015 and 2020, which represents the platform's most significant expansion period.
+6. TV-MA is the most common content rating on Netflix, followed by TV-14. Other ratings such as TV-PG and R appear less frequently.

@@ -17,6 +17,22 @@ df["date_added"]=df["date_added"].fillna("Unknown")
 df["rating"]=df["rating"].fillna("Unknown")
 print(df.isnull().sum())
 
+director = df[df["director"]!="Unknown"]
+print(director["director"].value_counts().head())
+director["director"].value_counts().head().plot(kind = "bar")
+plt.title("TOP 10 DIRECTORS")
+plt.show()
+
+actors = df["cast"].str.split(", ").explode()
+print(actors.value_counts().head(10))
+
+
+
+movies = df[df["type"]=="Movie"].copy()
+movies["duration"] = movies["duration"].str.replace(" min","").astype(int)
+print(movies.nlargest(10,"duration")[["title","duration"]])
+type_percentage = df["type"].value_counts(normalize=True)*100
+print(type_percentage)
 print(df["type"].value_counts())
 df["type"].value_counts().plot(kind="bar")
 plt.title("Movies vs Show")
@@ -48,3 +64,4 @@ print(df["rating"].value_counts().head())
 df["rating"].value_counts().plot(kind="bar")
 plt.title("Ratings")
 plt.show()
+
